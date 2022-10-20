@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0, 7, 14, 0.959);
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav '
+    'home home home home '
+    'about about about about '
+    'activity activity activity activity '
+    'contact contact contact contact '
+    'info info  form form'
+    'social social social social '
+    ;
+
+}
+
+/* nav,
+#home-bar,
+#r-home,
+#about-bar,
+#activity-bar,
+#Contact-bar,
+#info-bar,
+#form-bar,
+#footer-bar{
+   
+
+    border: skyblue 1px solid;
+} */
+
+nav{
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    border: 3px;
+    z-index: 1;
+    background: rgb(92, 92, 92) !important;
+}
+    .nav-bar{
+        list-style: none;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        height: 60px;   
+    }
+
+    .nav-bar a{
+        font-size: 43px;
+        color: #fff;
+        border-radius: 3px;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    .link:hover{
+        background: rgba(0, 0, 0, 0.418);
+    }
+
+#home-bar{
+    grid-area: home;
+}
+
+.home-page{
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between; 
+}
+
+.home-pic{
+    position: absolute;
+    margin-top: 52px;
+    left: 2%;
+}
+
+.home-logo{
+    border-radius: 4%;
+    width: 350px;
+    height: 70vh;
+    filter: grayscale(60%);  
+    border: rgba(255, 255, 255, 0.836)  1px solid;
+}
+
+.home-logo:hover{
+    filter: grayscale(0);
+}
+
+.heading{
+    background: rgba(146, 122, 122, 0.171);
+    right: 20px;
+    height: fit-content;
+    min-height: 370px;
+    width: 54%;
+    border-radius: 10px;
+    top: 85px;
+    position: absolute;  
+    border: #575757  1px solid;
+
+}
+
+.intro{
+    padding-top: 6px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.863);
+    margin-left: 20px; 
+    line-height: 45px;
+}
+
+.intro span{
+    color: rgb(0, 250, 83);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.describe-me{
+    margin-left: 20px;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 29px;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+#about-bar{
+    grid-area: about;
+   
+}
+
+.about-page{
+    height: 135vh;
+    position: relative;
+}
+
+.container-about .my-info h1{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800; 
+}
+
+
+.container-about .my-info h1 span{
+    color: rgb(19, 241, 19);
+}
+
+.about-text{
+    position: absolute;
+    background: rgba(170, 140, 140, 0.137);
+    height: fit-content;
+    min-height: 550px;
+    width: 40%;
+    left: 50px;
+    border-radius: 15px;
+    padding-left: 30px;
+    top: 80px;
+    color:rgba(255, 255, 255, 0.863);
+    font-size: 23px;
+    border: #575757  1px solid;
+}
+
+.about-text h2{
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.second-text{
+    padding-top: 10px;
+}
+
+.about-pic{
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    align-items: center;
+}
+
+.about-pic img{
+    height: 90vh;
+    width: 400px;
+    border-radius: 4%;
+    filter: grayscale(60%);
+    border: rgba(255, 255, 255, 0.836)  1px solid; 
+}
+
+.about-pic img:hover{
+    filter: grayscale(0);
+}
+
+#activity-bar{
+    grid-area: activity;
+}
+
+                   
+.activity{
+    height: 187vh;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.title h1 span{
+    color: rgb(0, 250, 83);
+}
+
+.title{
+    padding-top: 0px;
+}
+
+.holder{
+    margin-left: 40px;
+}
+#item1{
+    position: relative;
+}
+.activity-text{
+    background: rgba(146, 122, 122, 0.171);
+    height: fit-content;
+    min-height: 50vh;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 29px;
+    padding-left: 30px;
+    line-height: 30px;
+    padding-top: 12px;
+    border-radius: 10px;
+    border: #575757  1px solid;
+}
+
+.first-image{
+    position: absolute;
+    top: 7px;
+    left: 53%;
+}
+
+.first-image img{
+    width: 103%;
+    height: 45vh;
+    border: rgba(255, 255, 255, 0.836)  1px solid;
+}
+#item2{
+    position: relative;
+
+}
+.more-activity{
+     background: rgba(146, 122, 122, 0.171);
+    height: fit-content;
+    min-height: 50vh;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 29px;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-top: 12px;
+    border-radius: 10px;  
+    line-height: 30px;
+    border: #575757  1px solid;
+}
+
+.second-image{
+    position: absolute;
+    top: 12px;
+    left: 53%;
+}
+
+.second-image img{
+    width: 230%;
+    height: 45vh;
+    border: rgba(255, 255, 255, 0.836)  1px solid;
+}
+
+#item3{
+    position: relative;
+}
+.hobbies{
+    background: rgba(146, 122, 122, 0.171);
+    height: fit-content;
+    min-height: 50vh;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 29px;
+    margin-top: 15px;
+    padding-left: 30px;
+    border-radius: 10px;
+    line-height: 30px;
+    border: #575757  1px solid;
+}
+
+.third-image{
+    position: absolute;
+    top: 20px;
+    left: 53%;
+}
+
+.third-image img{
+    width: 103%;
+    height: 45vh;
+    border: rgba(255, 255, 255, 0.836)  1px solid;
+}
+
+.hobbies h2{
+    font-weight: 500;
+}
+
+.hobbies h2 span{
+    color: rgb(0, 250, 83);
+}
+
+#Contact-bar{
+    grid-area: contact;
+}
+
+.contact-me h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.contact-me h1 span{
+    color: rgb(0, 250, 83);
+}
+.contact-info h2{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-info p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+#info-bar{
+    grid-area: info;
+}
+
+.more-details{
+    background: rgba(146, 122, 122, 0.171);
+    width: 94%;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: fit-content;
+    color:rgba(255, 255, 255, 0.863);
+    font-size: 26px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    border: #575757  1px solid;
+}
+
+#form-bar{
+    grid-area: form;
+}
+
+#form-bar form{
+    background: rgba(146, 122, 122, 0.171);
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    padding-top: 5px;
+    border:  #575757  1px solid;
+}
+
+#form-bar form button{
+    background: darkcyan;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 23%;
+    height: 30px;
+    color: #fff;
+    margin-bottom: 13px;
+    border: #575757  1px solid; 
+}
+
+#form-bar form button:hover{
+    background: rgb(11, 223, 92);
+    cursor: pointer;
+}
+
+#form-bar input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: #575757  1px solid;
+    width: 60%;
+}
+
+#form-bar textarea{
+    padding: 5px;
+    font-size: 17px;
+    border: #575757  1px solid;
+}
+
+#footer-bar{
+    grid-area: social;
+}
+
+.details{
+    background: rgba(146, 122, 122, 0.171);
+    left: 95%;
+    top: 128px;
+    height: 10vh;
+    border-radius: 8px;
+    border: #575757  1px solid;
+}
+
+.details ul{
+    list-style: none;
+    display: flex;
+}
+
+.details ul li{
+    font-size: 30px;
+    padding-left: 18px;
+    padding-top: 12px;
+}
+
+.details ul li a{
+    color:rgba(255, 255, 255, 0.863);
+    text-decoration: none;
+}
+
+.details ul li a:hover{
+    background: rgba(0, 0, 0, 0.418);
+    border-radius: 5px;
+} 
