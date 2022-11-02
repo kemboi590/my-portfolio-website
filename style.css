@@ -3,9 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --bg-color: rgba(0, 7, 14, 0.959);
+    --text-color: #fff;
+    --bg-nav: rgb(92, 92, 92);
+    --link-hover: rgba(0, 0, 0, 0.418);
+    --border-color: #575757;
+    --imgLogo-border: rgba(255, 255, 255, 0.836);
+    --boxText-color: rgba(255, 255, 255, 0.863);
+    --hover-btn: rgb(11, 223, 92);
+    --span-color: rgb(0, 250, 83);
+    --boxBg-color: rgba(146, 122, 122, 0.171);
+    --formBtn-color: darkcyan;
+}
 
 body{
-    background: rgba(0, 7, 14, 0.959);
+    background: var(--bg-color);
     width: 100%;
     display: grid;
     grid-template-areas: 
@@ -40,7 +53,7 @@ nav{
     top: 0;
     border: 3px;
     z-index: 1;
-    background: rgb(92, 92, 92) !important;
+    background: var(--bg-nav);
 }
     .nav-bar{
         list-style: none;
@@ -52,14 +65,14 @@ nav{
 
     .nav-bar a{
         font-size: 43px;
-        color: #fff;
+        color: var(--text-color);
         border-radius: 3px;
         text-decoration: none;
         margin-left: 30px;
     }
 
     .link:hover{
-        background: rgba(0, 0, 0, 0.418);
+        background: var(--link-hover);
     }
 
 #home-bar{
@@ -88,7 +101,7 @@ nav{
     width: 350px;
     height: 70vh;
     filter: grayscale(60%);  
-    border: rgba(255, 255, 255, 0.836)  1px solid;
+    border: var(--imgLogo-border)  1px solid;
 }
 
 .home-logo:hover{
@@ -96,7 +109,7 @@ nav{
 }
 
 .heading{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     right: 20px;
     height: fit-content;
     min-height: 370px;
@@ -104,7 +117,7 @@ nav{
     border-radius: 10px;
     top: 85px;
     position: absolute;  
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 
 }
 
@@ -118,7 +131,7 @@ nav{
 }
 
 .intro span{
-    color: rgb(0, 250, 83);
+    color: var(--span-color);
     font-weight: bold;
     font-size: 40px;
 }
@@ -126,7 +139,7 @@ nav{
 .describe-me{
     margin-left: 20px;
     padding-top: 5px;
-    color: rgba(255, 255, 255, 0.863);
+    color: var(--boxText-color);
     font-size: 29px;
     font-weight: 100;
     line-height: 27px;
@@ -143,7 +156,7 @@ nav{
 }
 
 .container-about .my-info h1{
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     font-size: 50px;
     font-weight: 800; 
@@ -151,12 +164,12 @@ nav{
 
 
 .container-about .my-info h1 span{
-    color: rgb(19, 241, 19);
+    color: var(--span-color);
 }
 
 .about-text{
     position: absolute;
-    background: rgba(170, 140, 140, 0.137);
+    background: var(--boxBg-color);
     height: fit-content;
     min-height: 550px;
     width: 40%;
@@ -164,9 +177,9 @@ nav{
     border-radius: 15px;
     padding-left: 30px;
     top: 80px;
-    color:rgba(255, 255, 255, 0.863);
+    color:var(--boxText-color);
     font-size: 23px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 .about-text h2{
@@ -190,7 +203,7 @@ nav{
     width: 400px;
     border-radius: 4%;
     filter: grayscale(60%);
-    border: rgba(255, 255, 255, 0.836)  1px solid; 
+    border:var(--imgLogo-border)  1px solid; 
 }
 
 .about-pic img:hover{
@@ -210,12 +223,12 @@ nav{
     text-align: center;
     font-size: 50px;
     font-weight: 800;
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
 .title h1 span{
-    color: rgb(0, 250, 83);
+    color: var(--span-color);
 }
 
 .title{
@@ -229,17 +242,17 @@ nav{
     position: relative;
 }
 .activity-text{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     height: fit-content;
     min-height: 50vh;
     width: 50%;
-    color: rgba(255, 255, 255, 0.863);
+    color: var(--boxText-color);
     font-size: 29px;
     padding-left: 30px;
     line-height: 30px;
     padding-top: 12px;
     border-radius: 10px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 .first-image{
@@ -251,25 +264,25 @@ nav{
 .first-image img{
     width: 103%;
     height: 45vh;
-    border: rgba(255, 255, 255, 0.836)  1px solid;
+    border: var(--imgLogo-border)  1px solid;
 }
 #item2{
     position: relative;
 
 }
 .more-activity{
-     background: rgba(146, 122, 122, 0.171);
+     background: var(--boxBg-color);
     height: fit-content;
     min-height: 50vh;
     width: 50%;
-    color: rgba(255, 255, 255, 0.863);
+    color: var(--boxText-color);
     font-size: 29px;
     margin-top: 15px;
     padding-left: 30px;
     padding-top: 12px;
     border-radius: 10px;  
     line-height: 30px;
-    border: #575757  1px solid;
+    border: var(--imgLogo-border)  1px solid;
 }
 
 .second-image{
@@ -281,24 +294,24 @@ nav{
 .second-image img{
     width: 230%;
     height: 45vh;
-    border: rgba(255, 255, 255, 0.836)  1px solid;
+    border: var(--imgLogo-border)  1px solid;
 }
 
 #item3{
     position: relative;
 }
 .hobbies{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     height: fit-content;
     min-height: 50vh;
     width: 50%;
-    color: rgba(255, 255, 255, 0.863);
+    color: var(--boxText-color);
     font-size: 29px;
     margin-top: 15px;
     padding-left: 30px;
     border-radius: 10px;
     line-height: 30px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 .third-image{
@@ -310,7 +323,7 @@ nav{
 .third-image img{
     width: 103%;
     height: 45vh;
-    border: rgba(255, 255, 255, 0.836)  1px solid;
+    border: var(--imgLogo-border)  1px solid;
 }
 
 .hobbies h2{
@@ -318,7 +331,7 @@ nav{
 }
 
 .hobbies h2 span{
-    color: rgb(0, 250, 83);
+    color: var(--span-color);
 }
 
 #Contact-bar{
@@ -327,21 +340,21 @@ nav{
 
 .contact-me h1{
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
     font-size: 50px;
     font-weight: 800;
 }
 
 .contact-me h1 span{
-    color: rgb(0, 250, 83);
+    color: var(--span-color);
 }
 .contact-info h2{
-    color: white;
+    color: var(--text-color);
     text-align: center;
     margin-top: 10px;
 }
 .contact-info p{
-    color: white;
+    color: var(--text-color);
     text-align: center;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -353,16 +366,16 @@ nav{
 }
 
 .more-details{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     width: 94%;
     margin-left: 15px;
     margin-top: 15px;
     height: fit-content;
-    color:rgba(255, 255, 255, 0.863);
+    color:var(--boxText-color);
     font-size: 26px;
     padding: 40px 20px;
     border-radius: 8px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 #form-bar{
@@ -370,30 +383,30 @@ nav{
 }
 
 #form-bar form{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     width: 90%;
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 25px;
     padding-top: 5px;
-    border:  #575757  1px solid;
+    border:  var(--border-color)  1px solid;
 }
 
 #form-bar form button{
-    background: darkcyan;
+    background: var(--formBtn-color);
     border-radius: 5px;
     font-size: 15px;
     font-weight: 700;
     width: 23%;
     height: 30px;
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 13px;
-    border: #575757  1px solid; 
+    border: var(--border-color)  1px solid; 
 }
 
 #form-bar form button:hover{
-    background: rgb(11, 223, 92);
+    background: var(--hover-btn);
     cursor: pointer;
 }
 
@@ -401,14 +414,14 @@ nav{
     margin-bottom: 10px;
     padding: 10px;
     font-size: 17px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
     width: 60%;
 }
 
 #form-bar textarea{
     padding: 5px;
     font-size: 17px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 #footer-bar{
@@ -416,12 +429,12 @@ nav{
 }
 
 .details{
-    background: rgba(146, 122, 122, 0.171);
+    background: var(--boxBg-color);
     left: 95%;
     top: 128px;
     height: 10vh;
     border-radius: 8px;
-    border: #575757  1px solid;
+    border: var(--border-color)  1px solid;
 }
 
 .details ul{
@@ -436,11 +449,12 @@ nav{
 }
 
 .details ul li a{
-    color:rgba(255, 255, 255, 0.863);
+    color:var(--boxText-color);
     text-decoration: none;
 }
 
 .details ul li a:hover{
-    background: rgba(0, 0, 0, 0.418);
+    background: var(--link-hover);
     border-radius: 5px;
 } 
+
